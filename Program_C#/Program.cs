@@ -37,3 +37,17 @@ string[] NewArray(string[] arr, int count)
     return newArray;
 }
 
+void PrintArray(string[] arr)
+{
+    if (arr.Length == 0)
+    {
+        Console.WriteLine("[]");
+    }
+    else
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (i == 0) Console.Write("[");
+            if (i < arr.Length - 1) Console.Write(arr[i] + ", ");
+            else Console.Write(arr[i] + "]");
+        }
+}
