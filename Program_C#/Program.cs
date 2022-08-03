@@ -51,3 +51,9 @@ void PrintArray(string[] arr)
             else Console.Write(arr[i] + "]");
         }
 }
+
+int lengthNewArray = LengthNewArray(array);
+string[] result = NewArray(array, lengthNewArray);
+PrintArray(array);
+Console.Write(" -> ");
+PrintArray(result);
